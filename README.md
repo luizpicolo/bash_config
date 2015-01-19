@@ -1,4 +1,4 @@
-mac_config
+Mac Configuration
 ==========
 
 My mac config
