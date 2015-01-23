@@ -11,6 +11,7 @@
 #########################
 
 alias gpom="git push origin master"
+alias gpomf="git push origin master --force"
 alias glom="git pull origin master"
 alias gmm="git merge master"
 alias gmd="git merge developer"
@@ -19,6 +20,7 @@ alias gca="git commit --amend"
 alias gs="git status"
 alias ga="git add ."
 alias gcm="git checkout master"
+alias gcd="git checkout developer"
 alias gb="git branch"
 alias gbd="git branch -D"
 
@@ -34,6 +36,7 @@ alias rdmr="rake db:migrate:reset"
 alias rds="rake db:seed"
 alias rr="rake routes"
 alias rac="rake assets:clean && rm -rf tmp/cache/assets/development/"
+alias rspec="rake db:test:prepare && rspec"
 
 ######################
 # MINA DEPLOY
