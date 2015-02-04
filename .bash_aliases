@@ -48,3 +48,11 @@ alias rspec="rake db:test:prepare && rspec"
 
 alias msd="mina staging deploy"
 alias mpd="mina production deploy"
+alias mpdc="mina production deploy:cleanup"
+alias msdc="mina staging deploy:cleanup"
+
+######################
+# POSTGRESQL
+#####################
+
+alias postgre_start="postgres -D /usr/local/var/postgres"
