@@ -36,11 +36,11 @@ alias rs="rails server"
 alias rsp="rails s -e production"
 alias rc="rails console"
 alias rdm="rake db:migrate"
-alias rdmr="rake db:migrate:reset"
+alias rdmr="rake db:migrate:reset && rake db:seed"
 alias rds="rake db:seed"
 alias rr="rake routes"
 alias rac="rake assets:clean && rm -rf tmp/cache/assets/development/"
-alias rspec="rake db:test:prepare && rspec"
+alias rspec:clear="rake db:test:prepare && rspec"
 
 ######################
 # MINA DEPLOY
