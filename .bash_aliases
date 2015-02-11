@@ -25,6 +25,7 @@ alias gcm="git checkout master"
 alias gcd="git checkout developer"
 alias gb="git branch"
 alias gbd="git branch -D"
+alias gpa="git push origin developer deploy"
 
 #######################
 # ALIAS FOR RUBY ON RAILS
@@ -41,6 +42,7 @@ alias rds="rake db:seed"
 alias rr="rake routes"
 alias rac="rake assets:clean && rm -rf tmp/cache/assets/development/"
 alias rspec:clear="rake db:test:prepare && rspec"
+alias rp="rake db:test:prepare"
 
 ######################
 # MINA DEPLOY
@@ -56,3 +58,14 @@ alias msdc="mina staging deploy:cleanup"
 #####################
 
 alias postgre_start="postgres -D /usr/local/var/postgres"
+
+######################
+# PREPARED DEPLOY
+#####################
+
+alias pd="
+	git checkout master && 
+	git merge developer && 
+	git checkout deploy && 
+	git merge master &&
+	git checkout developer"
