@@ -68,4 +68,5 @@ alias pd="
 	git merge developer && 
 	git checkout deploy && 
 	git merge master &&
-	git checkout developer"
+	git checkout developer &&
+	gpa"
