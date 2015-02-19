@@ -42,7 +42,9 @@ alias rds="rake db:seed"
 alias rr="rake routes"
 alias rac="rake assets:clean && rm -rf tmp/cache/assets/development/"
 alias rspec:clear="rake db:test:prepare && rspec"
-alias rp="rake db:test:prepare"
+alias rdtp="rake db:test:prepare"
+alias rdc="rake db:create"
+alias rrt="rails g rename:app_to"
 
 ######################
 # MINA DEPLOY
