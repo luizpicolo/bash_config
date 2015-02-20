@@ -25,7 +25,7 @@ alias gcm="git checkout master"
 alias gcd="git checkout developer"
 alias gb="git branch"
 alias gbd="git branch -D"
-alias gpa="git push origin developer deploy"
+alias gpa="git push origin master  developer deploy"
 
 #######################
 # ALIAS FOR RUBY ON RAILS
