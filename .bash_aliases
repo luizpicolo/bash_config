@@ -10,9 +10,11 @@
 # ALIAS FOR GIT
 #########################
 
+alias gi="git init"
 alias gpom="git push origin master"
 alias gpomf="git push origin master --force"
 alias glom="git pull origin master"
+alias gloma="gcm && glom && gcd && gmm"
 alias gpod="git push origin developer"
 alias gmm="git merge master"
 alias gmd="git merge developer"
@@ -50,6 +52,8 @@ alias rrt="rails g rename:app_to"
 # MINA DEPLOY
 ######################
 
+alias mss="mina staging setup"
+alias mps="mina production setup"
 alias msd="mina staging deploy"
 alias mpd="mina production deploy"
 alias mpdc="mina production deploy:cleanup"
@@ -61,14 +65,20 @@ alias msdc="mina staging deploy:cleanup"
 
 alias postgre_start="postgres -D /usr/local/var/postgres"
 
+#####################
+# MongoDB
+####################
+
+alias mongodb_start="mongod --config /usr/local/e/mongod.conf"
+
 ######################
 # PREPARED DEPLOY
 #####################
 
 alias pd="
-	git checkout master && 
-	git merge developer && 
-	git checkout deploy && 
+	git checkout master &&
+	git merge developer &&
+	git checkout deploy &&
 	git merge master &&
 	git checkout developer &&
 	gpa"
