@@ -70,15 +70,3 @@ alias postgre_start="postgres -D /usr/local/var/postgres"
 ####################
 
 alias mongodb_start="mongod --config /usr/local/e/mongod.conf"
-
-######################
-# PREPARED DEPLOY
-#####################
-
-alias pd="
-	git checkout master &&
-	git merge developer &&
-	git checkout deploy &&
-	git merge master &&
-	git checkout developer &&
-	gpa"
