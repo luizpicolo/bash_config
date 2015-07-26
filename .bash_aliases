@@ -28,6 +28,7 @@ alias gcd="git checkout developer"
 alias gb="git branch"
 alias gbd="git branch -D"
 alias gpa="git push origin master  developer deploy"
+alias giw="git instaweb --httpd=webrick"
 
 #######################
 # ALIAS FOR RUBY ON RAILS
@@ -48,6 +49,11 @@ alias rdtp="rake db:test:prepare"
 alias rdc="rake db:create"
 alias rrt="rails g rename:app_to"
 
+# Ruby with zeus
+alias zs="zeus server"
+alias zt="zeus test"
+alias zc="zeus console"
+
 ######################
 # MINA DEPLOY
 ######################
@@ -64,9 +70,23 @@ alias msdc="mina staging deploy:cleanup"
 #####################
 
 alias postgre_start="postgres -D /usr/local/var/postgres"
+alias pgstart="postgres -D /usr/local/var/postgres"
 
 #####################
 # MongoDB
 ####################
 
 alias mongodb_start="mongod --config /usr/local/e/mongod.conf"
+
+#####################
+# Ruby Sadist
+####################
+
+alias runfulltests="
+  rspec &&
+  mkdir -p tmp/brakeman &&
+  brakeman -q -o tmp/brakeman/overview.html && open tmp/brakeman/overview.html &&
+  rubycritic && open tmp/rubycritic/overview.html &&
+  open coverage/index.html &&
+  metric_fu
+"
