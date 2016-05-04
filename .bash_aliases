@@ -1,20 +1,17 @@
 ####################################
-####################################
-#### ALIASES TO LUIZ PICOLO
+#### Aliases By LUIZ PICOLO
 #### luizpicolo@gmail.com
 #### www.luizpicolo.com.br
 ####################################
-####################################
 
 ########################
-# ALIAS FOR GIT
+# Git Aliases
 #########################
 
 alias gi="git init"
 alias gpom="git push origin master"
 alias gpomf="git push origin master --force"
 alias glom="git pull origin master"
-alias gloma="gcm && glom && gcd && gmm"
 alias gpod="git push origin developer"
 alias gmm="git merge master"
 alias gmd="git merge developer"
@@ -24,14 +21,12 @@ alias gs="git status"
 alias ga="git add ."
 alias gc="git checkout"
 alias gcm="git checkout master"
-alias gcd="git checkout developer"
 alias gb="git branch"
 alias gbd="git branch -D"
-alias gpa="git push origin master  developer deploy"
 alias giw="git instaweb --httpd=webrick"
 
 #######################
-# ALIAS FOR RUBY ON RAILS
+# Ruby on Raila aliases
 ########################
 
 alias bi="bundle install"
@@ -43,19 +38,15 @@ alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset && rake db:seed"
 alias rds="rake db:seed"
 alias rr="rake routes"
-alias rac="rake assets:clean && rm -rf tmp/cache/assets/development/"
-alias rspec:clear="rake db:test:prepare && rspec"
+alias rac="rake assets:clean && rake tmp:clear"
+alias rspecc="rake db:test:prepare && rspec"
 alias rdtp="rake db:test:prepare"
 alias rdc="rake db:create"
+# Need gem 'rename'
 alias rrt="rails g rename:app_to"
 
-# Ruby with zeus
-alias zs="zeus server"
-alias zt="zeus test"
-alias zc="zeus console"
-
 ######################
-# MINA DEPLOY
+# Mina Deploy
 ######################
 
 alias mss="mina staging setup"
@@ -66,17 +57,16 @@ alias mpdc="mina production deploy:cleanup"
 alias msdc="mina staging deploy:cleanup"
 
 ######################
-# POSTGRESQL
+# PostgreSql
 #####################
 
-alias postgre_start="postgres -D /usr/local/var/postgres"
 alias pgstart="postgres -D /usr/local/var/postgres"
 
 #####################
 # MongoDB
 ####################
 
-alias mongodb_start="mongod --config /usr/local/e/mongod.conf"
+alias mdb_start="mongod --config /usr/local/e/mongod.conf"
 
 #####################
 # Ruby Sadist
