@@ -55,6 +55,8 @@ alias msd="mina staging deploy"
 alias mpd="mina production deploy"
 alias mpdc="mina production deploy:cleanup"
 alias msdc="mina staging deploy:cleanup"
+alias mpc="mina production console"
+alias msc="mina staging console"
 
 ######################
 # PostgreSql
