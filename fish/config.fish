@@ -37,7 +37,7 @@ function gmd
 end
 
 function gcom
-  git commit -m
+  git commit -m $argv
 end
 
 function gcoma
@@ -53,7 +53,7 @@ function ga
 end
 
 function gc
-  git checkout
+  git checkout $argv
 end
 
 function gcm
@@ -65,7 +65,7 @@ function gb
 end
 
 function gbd
-  git branch -D
+  git branch -D $argv
 end
 
 function giw
@@ -133,7 +133,7 @@ end
 
 # Need gem 'rename'
 function rrt
-  rails g rename:app_to
+  rails g rename:app_to $argv
 end
 
 ######################
