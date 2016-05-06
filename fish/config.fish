@@ -202,3 +202,4 @@ function runfulltests
   open coverage/index.html
   metric_fu
 end
+rvm default
