@@ -1,5 +1,5 @@
 ####################################
-#### Aliases By LUIZ PICOLO
+#### Aliases By Luiz Picolo
 #### luizpicolo@gmail.com
 #### www.luizpicolo.com.br
 ####################################

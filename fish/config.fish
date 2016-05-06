@@ -4,6 +4,8 @@
 #### www.luizpicolo.com.br
 ####################################
 
+rvm default
+
 ########################
 # Git functions
 #########################
@@ -202,4 +204,3 @@ function runfulltests
   open coverage/index.html
   metric_fu
 end
-rvm default

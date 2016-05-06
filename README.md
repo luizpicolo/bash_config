@@ -14,5 +14,7 @@ My Bash config
 
     # Add .bash_aliases to .bashrc
     echo "source ~/.bash_aliases" >> ~/.bashrc
+    echo "rvm default" >> ~/.config/fish/config.fish
 
+    # Load source
     source ~/.bash_profile
