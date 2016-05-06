@@ -1,6 +1,8 @@
 # Bash Configuration
 
-My Bash config
+![teste](https://cdn.rawgit.com/luizpicolo/bash_config/master/ascii_fish.png)
+
+My Bash and Fish aliases
 
 ## How to use
 
@@ -14,7 +16,6 @@ My Bash config
 
     # Add .bash_aliases to .bashrc
     echo "source ~/.bash_aliases" >> ~/.bashrc
-    echo "rvm default" >> ~/.config/fish/config.fish
 
     # Load source
     source ~/.bash_profile
