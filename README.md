@@ -1,22 +1,21 @@
-# Mac Configuration
+# Bash Configuration
 
-My mac config
+![teste](https://cdn.rawgit.com/luizpicolo/bash_config/master/ascii_fish.png)
 
-# how to use
+My Bash and Fish aliases
 
-    git clone git@github.com:luizpicolo/mac_config.git ~/mac_config
-    cd ~/mac_config
+## How to use
+
+    # Ubuntu and OSX
+    git clone git@github.com:luizpicolo/bash_config.git ~/bash_config
+    cd ~/bash_config
     cp .bash_aliases ~/
 
-Edit `.bash_profile` and add
+    # Ubuntu
+    cp -r fish/functions/ ~/.config/fish/ && cp fish/config.fish ~/.config/fish/
 
-    # Bash to Alias
-    source ~/.bash_aliases
+    # Add .bash_aliases to .bashrc
+    echo "source ~/.bash_aliases" >> ~/.bashrc
 
-Execute
-
+    # Load source
     source ~/.bash_profile
-
-# Aliases list
-
-https://github.com/luizpicolo/mac_config/blob/master/.bash_aliases

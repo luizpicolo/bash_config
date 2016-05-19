@@ -83,7 +83,7 @@ alias runfulltests="
   metric_fu
 "
 #####################
-# Ruby Sadist
+# Jekyll
 ####################
 
 alias js="jekyll server"
