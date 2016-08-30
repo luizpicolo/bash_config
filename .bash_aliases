@@ -24,6 +24,7 @@ alias gcm="git checkout master"
 alias gb="git branch"
 alias gbd="git branch -D"
 alias giw="git instaweb --httpd=webrick"
+alias gpa="git push --all"
 
 #######################
 # Ruby on Raila aliases
