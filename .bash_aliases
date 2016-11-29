@@ -63,7 +63,7 @@ alias msc="mina staging console"
 # PostgreSql
 #####################
 
-alias pgstart="postgres -D /usr/local/var/postgres"
+alias pg="pg_ctl -D /usr/local/var/postgres "
 
 #####################
 # MongoDB
