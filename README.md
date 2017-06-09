@@ -8,8 +8,7 @@ My Bash and Fish aliases
 
     # Ubuntu and OSX
     git clone git@github.com:luizpicolo/bash_config.git ~/bash_config
-    cd ~/bash_config
-    cp .bash_aliases ~/
+    ln -s ~/bash_config/.bash_aliases ~/.bash_aliases
 
     # Ubuntu
     cp -r fish/functions/ ~/.config/fish/ && cp fish/config.fish ~/.config/fish/
