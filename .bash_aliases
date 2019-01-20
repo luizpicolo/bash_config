@@ -106,3 +106,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 ####################
 
 alias mount_hd_2='sudo /usr/local/bin/ntfs-3g /dev/disk2s1 /Volumes/NTFS -olocal -oallow_other'
+
+####################
+# Sleep Mac
+####################
+
+alias donotsleep='pmset noidle'
+
+
