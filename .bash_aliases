@@ -27,7 +27,7 @@ alias giw="git instaweb --httpd=webrick"
 alias gpa="git push --all"
 
 #######################
-# Ruby on Raila aliases
+# Ruby on Rails aliases
 ########################
 
 alias bi="bundle install"
@@ -43,8 +43,6 @@ alias rac="rake assets:clean && rake tmp:clear"
 alias rspecc="rake db:test:prepare && rspec"
 alias rdtp="rake db:test:prepare"
 alias rdc="rake db:create"
-# Need gem 'rename'
-alias rrt="rails g rename:app_to"
 
 ######################
 # Mina Deploy
@@ -90,22 +88,13 @@ alias runfulltests="
 alias js="jekyll server"
 
 #####################
-# APT
-####################
-
-alias sagi="sudo apt-get install"
-
-#####################
-# Alert
-####################
-
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-#####################
 # To Mount External HDD
 ####################
 
-alias mount_hd_2='sudo /usr/local/bin/ntfs-3g /dev/disk2s1 /Volumes/NTFS -olocal -oallow_other'
+alias mount_hd='
+  sudo mkdir /Volumes/NTFS &&
+  sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk2s1 /Volumes/NTFS
+'
 
 ####################
 # Sleep Mac
