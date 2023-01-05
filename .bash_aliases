@@ -107,9 +107,4 @@ alias donotsleep='pmset noidle'
 ####################
 
 docker volume create ruby-bundle-cache
-alias rails='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle ghcr.io/rails/cli'
-alias rails-server='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 ghcr.io/rails/cli server -b 0.0.0.0'
-alias rails-dev='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 --entrypoint bin/dev ghcr.io/rails/cli'
-alias bundle='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle --entrypoint bundle ghcr.io/rails/cli'
-alias rake='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle --entrypoint rake ghcr.io/rails/cli'
-alias yarn='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle --entrypoint yarn ghcr.io/rails/cli'
+alias docked='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 ghcr.io/rails/cli'
